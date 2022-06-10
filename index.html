@@ -358,8 +358,16 @@
                     </li>
                 </ul>
             </div>
+            <div class="subscription">
+                <h3 class="subscription">Подпишитесь на рассылку</h3>
+                <input type="email" placeholder="E-mail">
+                <button type="button">Подписаться</button>
+            </div>
         </div>    
     </footer>
+
+    <!-- java script -->
+
     <div data-modal class="backdrop is-hidden">
         <div class="modal">
             <button data-modal-close class="close">
@@ -367,8 +375,32 @@
                     <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
             </button>
+            <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+
+            <label for="name">Имя</label>
+            <input type="text" id="name">
+            <br />
+
+            <label for="tel">Телефон</label>
+            <input type="tel" id="tel">
+            <br />
+
+            <label for="mail">Почта</label>
+            <input type="email">
+            <br />
+
+            <label for="comment">Комментарий</label>
+            <textarea name="" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+            <br />
+
+            <input type="checkbox" id="agree">
+            <label for="agree">Соглашаюсь с рассылкой и принимаю<a href="">Условия договора</a></label>
+
+            <button type="button">Отправить</button>
+            
+
+
         </div>
-    </div>
     <script src="./js/modal.js"></script>
 </body>
 </html>
