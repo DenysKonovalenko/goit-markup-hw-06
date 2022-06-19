@@ -360,15 +360,15 @@
             </div>
             <div class="subscription">
                 <h3 class="subscription-title">Подпишитесь на рассылку</h3>
-                <div class="subscription-thumb">
-                    <input class="subscription-input" type="email" placeholder="E-mail">
-                    <button class="subscription-button" type="button">
+                <form class="subscription-thumb">
+                    <input class="subscription-input" type="email" name="email" placeholder="E-mail">
+                    <button class="subscription-button" type="submit">
                     Подписаться
                     <svg class="subscription-icon">
                         <use href="./images/sprite.svg#icon-send"></use>
                     </svg>
                     </button>
-                </div> 
+                </form> 
             </div>
         </div>    
     </footer>
@@ -386,7 +386,7 @@
             <form class="form">
                 <label class="form-label">
                     <span class="form-name">Имя</span>
-                    <input type="text" class="form-input">
+                    <input type="text" class="form-input" name="user">
                     <svg class="form-icon">
                         <use href="./images/sprite.svg#icon-person"></use>
                     </svg>
@@ -394,7 +394,7 @@
             
                 <label class="form-label">
                     <span class="form-name">Телефон</span>
-                    <input type="tel" class="form-input">
+                    <input type="tel" class="form-input" name="phone">
                     <svg class="form-icon">
                         <use href="./images/sprite.svg#icon-phone"></use>
                     </svg>
@@ -402,24 +402,27 @@
                         
                 <label class="form-label">
                     <span class="form-name">Почта</span>
-                    <input type="email" class="form-input">
+                    <input type="email" class="form-input" name="email">
                     <svg class="form-icon">
                         <use href="./images/sprite.svg#icon-email"></use>
                     </svg>
                 </label>
                 
-                <label class="form-label">
+                <label class="form-label form-textarea">
                     <span class="form-name">Комментарий</span>
-                    <textarea class="textarea" cols="1" rows="4" placeholder="Введите текст"></textarea>
+                    <textarea class="textarea" cols="1" rows="4" placeholder="Введите текст" name="message"></textarea>
                 </label>
                 
                 <label class="form-label form-checkbox">
-                    <input type="checkbox">
+                    <input type="checkbox" class="checkbox">
+                    <svg class="form-checkbox-icon" width="16px" height="15px">
+                        <use href="./images/sprite.svg#icon-check"></use>
+                    </svg>
                     <span>Соглашаюсь с рассылкой и принимаю</span>
                     <a href="" class="form-checkbox-link">Условия договора</a>
                 </label>
                 
-                <button type="button" class="form-button">Отправить</button>
+                <button type="submit" class="form-button">Отправить</button>
             </form>
         </div>
     </div>
